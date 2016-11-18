@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<meta>
+  <types>
+    <enumtype Type="ETest" Namespace="" IsCustomized="true" DisplayName="ETest" Desc="ETest">
+      <enum NativeValue="EA" Value="EA" DisplayName="EA" Desc="" MemberValue="-1" />
+      <enum NativeValue="EB" Value="EB" DisplayName="EB" Desc="" MemberValue="-1" />
+      <enum NativeValue="EC" Value="EC" DisplayName="EC" Desc="" MemberValue="-1" />
+    </enumtype>
+    <struct Type="StructTest" Namespace="" Base="" IsCustomized="true" DisplayName="StructTest" Desc="StructTest">
+      <Member Name="a" DisplayName="a" Desc="a" Type="bool" TypeFullName="System.Boolean" Class="StructTest" Public="true" />
+    </struct>
+  </types>
+  <agents>
+    <agent classfullname="AgentNodeTest" base="behaviac::Agent" DisplayName="AgentNodeTest" Desc="AgentNodeTest">
+      <Member Name="testFloat2" DisplayName="testFloat2" Desc="local_node" Class="AgentNodeTest" Type="TestNS::Float2" TypeFullName="XMLPluginBehaviac.TestNS_Float2" defaultvalue="{x=0;y=0;}" Static="false" Public="true" Readonly="false" />
+      <Member Name="testInt" DisplayName="testInt" Desc="testInt" Class="AgentNodeTest" Type="int" TypeFullName="System.Int32" defaultvalue="10" Static="false" Public="true" Readonly="false" />
+      <Member Name="test_int_array" DisplayName="test_int_array" Desc="test_int_array" Class="AgentNodeTest" Type="vector&lt;int&gt;" TypeFullName="System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" defaultvalue="3:1|2|3" Static="false" Public="true" Readonly="false" />
+      <Member Name="par_child_agent_1" DisplayName="par_child_agent_1" Desc="par_child_agent_1" Class="AgentNodeTest" Type="ChildNodeTest" TypeFullName="XMLPluginBehaviac.ChildNodeTest" defaultvalue="null" Static="false" Public="true" Readonly="false" />
+      <Member Name="c_ReturnFloat2" DisplayName="c_ReturnFloat2" Desc="c_ReturnFloat2" Class="AgentNodeTest" Type="TestNS::Float2" TypeFullName="XMLPluginBehaviac.TestNS_Float2" defaultvalue="{x=0;y=0;}" Static="false" Public="true" Readonly="false" />
+      <Member Name="c_ReturnFloat2Const" DisplayName="c_ReturnFloat2Const" Desc="c_ReturnFloat2Const" Class="AgentNodeTest" Type="TestNS::Float2" TypeFullName="XMLPluginBehaviac.TestNS_Float2" defaultvalue="{x=0;y=0;}" Static="false" Public="true" Readonly="false" />
+      <Member Name="redirectCount" DisplayName="redirectCount" Desc="redirectCount" Class="AgentNodeTest" Type="uint" TypeFullName="System.UInt32" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Member Name="redirectTime" DisplayName="redirectTime" Desc="redirectTime" Class="AgentNodeTest" Type="uint" TypeFullName="System.UInt32" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Method Name="event_test_int" DisplayName="event_test_int" Desc="event_test_int" Class="AgentNodeTest" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="true" istask="true">
+        <Param Name="val_int" Type="int" TypeFullName="System.Int32" DisplayName="val_int" Desc="val_int" />
+      </Method>
+      <Method Name="event_test_int_bool" DisplayName="event_test_int_bool" Desc="event_test_int_bool" Class="AgentNodeTest" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="true" istask="true">
+        <Param Name="val_int" Type="int" TypeFullName="System.Int32" DisplayName="val_int" Desc="val_int" />
+        <Param Name="val_bool" Type="bool" TypeFullName="System.Boolean" DisplayName="val_bool" Desc="val_bool" />
+      </Method>
+      <Method Name="event_test_int_bool_float" DisplayName="event_test_int_bool_float" Desc="event_test_int_bool_float" Class="AgentNodeTest" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="true" istask="true">
+        <Param Name="val_int" Type="int" TypeFullName="System.Int32" DisplayName="val_int" Desc="val_int" />
+        <Param Name="val_bool" Type="bool" TypeFullName="System.Boolean" DisplayName="val_bool" Desc="val_bool" />
+        <Param Name="val_float" Type="float" TypeFullName="System.Single" DisplayName="val_float" Desc="val_float" />
+      </Method>
+      <Method Name="event_test_void" DisplayName="event_test_void" Desc="event_test_void" Class="AgentNodeTest" ReturnType="bool" ReturnTypeFullName="System.Boolean" Static="false" Public="true" istask="true" />
+      <Method Name="task_test" DisplayName="task_test" Desc="task_test" Class="AgentNodeTest" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="true">
+        <Param Name="count" Type="int" TypeFullName="System.Int32" DisplayName="count" Desc="" />
+        <Param Name="weight" Type="float" TypeFullName="System.Single" DisplayName="weight" Desc="" />
+      </Method>
+      <Method Name="event_test_agent" DisplayName="event_test_agent" Desc="event_test_agent" Class="AgentNodeTest" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="true">
+        <Param Name="agent" Type="AgentNodeTest" TypeFullName="XMLPluginBehaviac.AgentNodeTest" DisplayName="agent" Desc="" />
+      </Method>
+      <Method Name="event_test_float2" DisplayName="event_test_float2" Desc="event_test_float2" Class="AgentNodeTest" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="true">
+        <Param Name="float2" Type="TestNS::Float2" TypeFullName="XMLPluginBehaviac.TestNS_Float2" DisplayName="float2" Desc="" />
+      </Method>
+      <Method Name="event_test_float2_ref" DisplayName="event_test_float2_ref" Desc="event_test_float2_ref" Class="AgentNodeTest" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="true">
+        <Param Name="float2" Type="TestNS::Float2&amp;" TypeFullName="XMLPluginBehaviac.TestNS_Float2" IsRef="true" DisplayName="float2" Desc="" />
+      </Method>
+      <Method Name="event_test_a" DisplayName="event_test_a" Desc="event_test_0" Class="AgentNodeTest" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="true">
+        <Param Name="param" Type="int" TypeFullName="System.Int32" DisplayName="param" Desc="" />
+      </Method>
+      <Method Name="event_test_b" DisplayName="event_test_b" Desc="event_test_1" Class="AgentNodeTest" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="true">
+        <Param Name="param" Type="int" TypeFullName="System.Int32" DisplayName="param" Desc="" />
+      </Method>
+    </agent>
+    <agent classfullname="CustomPropertyAgent" base="behaviac::Agent" DisplayName="CustomPropertyAgent" Desc="CustomPropertyAgent">
+      <Member Name="c_Bool" DisplayName="c_Bool" Desc="c_Bool" Class="CustomPropertyAgent" Type="bool" TypeFullName="System.Boolean" defaultvalue="false" Static="false" Public="true" Readonly="false" />
+      <Member Name="c_IntArray" DisplayName="c_IntArray" Desc="c_IntArray" Class="CustomPropertyAgent" Type="vector&lt;int&gt;" TypeFullName="System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" defaultvalue="0:" Static="false" Public="true" Readonly="false" />
+      <Member Name="c_StaticString" DisplayName="c_StaticString" Desc="c_StaticString" Class="CustomPropertyAgent" Type="string" TypeFullName="System.String" defaultvalue="" Static="true" Public="true" Readonly="false" />
+      <Member Name="c_Enum" DisplayName="c_Enum" Desc="c_Enum" Class="CustomPropertyAgent" Type="TNS::NE::NAT::eColor" TypeFullName="XMLPluginBehaviac.TNS_NE_NAT_eColor" defaultvalue="RED" Static="false" Public="true" Readonly="false" />
+      <Member Name="c_Location" DisplayName="c_Location" Desc="CustomPropertyAgent::c_Location" Class="CustomPropertyAgent" Type="UnityEngine::Vector3" TypeFullName="XMLPluginBehaviac.UnityEngine_Vector3" defaultvalue="{x=0;y=0;z=0;}" Static="false" Public="true" Readonly="false" />
+      <Member Name="TestMember1" DisplayName="TestMember1" Desc="TestMember1" Class="CustomPropertyAgent" Type="TestNamespace::ClassAsValueType" TypeFullName="XMLPluginBehaviac.TestNamespace_ClassAsValueType" defaultvalue="{x=0;y=0;}" Static="false" Public="true" Readonly="false" />
+      <Member Name="TestMember2" DisplayName="TestMember2" Desc="TestMember2" Class="CustomPropertyAgent" Type="TestNamespace::Float2" TypeFullName="XMLPluginBehaviac.TestNamespace_Float2" defaultvalue="{x=0;y=0;}" Static="false" Public="true" Readonly="false" />
+      <Method Name="PIR_IntArray" DisplayName="PIR_IntArray" Desc="PIR_IntArray" Class="CustomPropertyAgent" ReturnType="vector&lt;int&gt;" ReturnTypeFullName="System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" Static="false" Public="true" istask="false">
+        <Param Name="intArray" Type="vector&lt;int&gt;" TypeFullName="System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" DisplayName="intArray" Desc="" />
+      </Method>
+    </agent>
+    <agent classfullname="ParTestAgent" base="ParTestAgentBase" DisplayName="ParTestAgent" Desc="ParTestAgent">
+      <Member Name="C_GameObject" DisplayName="C_GameObject" Desc="C_GameObject" Class="ParTestAgent" Type="UnityEngine::GameObject" TypeFullName="XMLPluginBehaviac.UnityEngine_GameObject" defaultvalue="null" Static="false" Public="true" Readonly="false" />
+      <Member Name="C_Agent" DisplayName="C_Agent" Desc="C_Agent" Class="ParTestAgent" Type="ParTestAgent" TypeFullName="XMLPluginBehaviac.ParTestAgent" defaultvalue="null" Static="false" Public="true" Readonly="false" />
+    </agent>
+    <agent classfullname="EmployeeParTestAgent" base="ParTestAgent" DisplayName="EmployeeParTestAgent" Desc="EmployeeParTestAgent">
+      <Member Name="target" DisplayName="target" Desc="target" Class="EmployeeParTestAgent" Type="ParTestAgent" TypeFullName="XMLPluginBehaviac.ParTestAgent" defaultvalue="null" Static="false" Public="true" Readonly="false" />
+    </agent>
+    <agent classfullname="FSMAgentTest" base="behaviac::Agent" DisplayName="FSMAgentTest" Desc="FSMAgentTest">
+      <Member Name="InactiveCount" DisplayName="InactiveCount" Desc="InactiveCount" Class="FSMAgentTest" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Member Name="ActiveCount" DisplayName="ActiveCount" Desc="ActiveCount" Class="FSMAgentTest" Type="uint" TypeFullName="System.UInt32" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Member Name="PauseCount" DisplayName="PauseCount" Desc="PauseCount" Class="FSMAgentTest" Type="short" TypeFullName="System.Int16" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Member Name="ExitCount" DisplayName="ExitCount" Desc="ExitCount" Class="FSMAgentTest" Type="long" TypeFullName="System.Int64" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Member Name="FoodCount" DisplayName="FoodCount" Desc="FoodCount" Class="FSMAgentTest" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Member Name="EnergyCount" DisplayName="EnergyCount" Desc="EnergyCount" Class="FSMAgentTest" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+    </agent>
+    <agent classfullname="HTNAgentHouseBase" base="behaviac::Agent" DisplayName="HTNAgentHouseBase" Desc="HTNAgentHouseBase">
+      <Member Name="Money" DisplayName="Money" Desc="MemberProperty" Class="HTNAgentHouseBase" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+    </agent>
+    <agent classfullname="HTNAgentHouse" base="HTNAgentHouseBase" DisplayName="HTNAgentHouse" Desc="HTNAgentHouse">
+      <Member Name="Land" DisplayName="Land" Desc="Land" Class="HTNAgentHouse" Type="bool" TypeFullName="System.Boolean" defaultvalue="false" Static="false" Public="true" Readonly="false" />
+      <Member Name="GoodCredit" DisplayName="GoodCredit" Desc="HTNAgentHouse::GoodCredit" Class="HTNAgentHouse" Type="bool" TypeFullName="System.Boolean" defaultvalue="true" Static="false" Public="true" Readonly="false" />
+      <Member Name="Contract" DisplayName="Contract" Desc="HTNAgentHouse::Contract" Class="HTNAgentHouse" Type="bool" TypeFullName="System.Boolean" defaultvalue="false" Static="false" Public="true" Readonly="false" />
+      <Member Name="Permit" DisplayName="Permit" Desc="HTNAgentHouse::Permit" Class="HTNAgentHouse" Type="bool" TypeFullName="System.Boolean" defaultvalue="false" Static="false" Public="true" Readonly="false" />
+      <Member Name="HouseBuilt" DisplayName="HouseBuilt" Desc="HTNAgentHouse::HouseBuilt" Class="HTNAgentHouse" Type="bool" TypeFullName="System.Boolean" defaultvalue="false" Static="false" Public="true" Readonly="false" />
+      <Member Name="Mortgage" DisplayName="Mortgage" Desc="HTNAgentHouse::Mortgage" Class="HTNAgentHouse" Type="bool" TypeFullName="System.Boolean" defaultvalue="false" Static="false" Public="true" Readonly="false" />
+      <Member Name="House" DisplayName="House" Desc="HTNAgentHouse::House" Class="HTNAgentHouse" Type="bool" TypeFullName="System.Boolean" defaultvalue="false" Static="false" Public="true" Readonly="false" />
+      <Method Name="root" DisplayName="root" Desc="root" Class="HTNAgentHouse" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="true" />
+      <Method Name="build_house" DisplayName="build_house" Desc="build_house" Class="HTNAgentHouse" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="true" />
+      <Method Name="construct" DisplayName="construct" Desc="construct" Class="HTNAgentHouse" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="true" />
+    </agent>
+    <agent classfullname="HTNAgentTravel" base="behaviac::Agent" DisplayName="HTNAgentTravel" Desc="HTNAgentTravel">
+      <Method Name="root" DisplayName="root" Desc="root" Class="HTNAgentTravel" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="true" />
+      <Method Name="travel" DisplayName="travel" Desc="travel" Class="HTNAgentTravel" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="true">
+        <Param Name="x" Type="int" TypeFullName="System.Int32" DisplayName="x" Desc="" />
+        <Param Name="y" Type="int" TypeFullName="System.Int32" DisplayName="y" Desc="" />
+      </Method>
+      <Method Name="travel_by_air" DisplayName="travel_by_air" Desc="travel_by_air" Class="HTNAgentTravel" ReturnType="void" ReturnTypeFullName="System.Void" Static="false" Public="true" istask="true">
+        <Param Name="x" Type="int" TypeFullName="System.Int32" DisplayName="x" Desc="" />
+        <Param Name="y" Type="int" TypeFullName="System.Int32" DisplayName="y" Desc="" />
+      </Method>
+    </agent>
+    <agent classfullname="PropertyReadonlyAgent" base="behaviac::Agent" DisplayName="PropertyReadonlyAgent" Desc="PropertyReadonlyAgent">
+      <Member Name="c_IntReadonly" DisplayName="c_IntReadonly" Desc="c_IntReadonly" Class="PropertyReadonlyAgent" Type="int" TypeFullName="System.Int32" defaultvalue="10" Static="false" Public="true" Readonly="true" />
+      <Member Name="c_Int" DisplayName="c_Int" Desc="c_Int" Class="PropertyReadonlyAgent" Type="int" TypeFullName="System.Int32" defaultvalue="1" Static="false" Public="true" Readonly="false" />
+      <Member Name="c_ResultStatic" DisplayName="c_ResultStatic" Desc="c_ResultStatic" Class="PropertyReadonlyAgent" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="true" Public="true" Readonly="false" />
+    </agent>
+    <agent classfullname="TestNS::AgentArrayAccessTest" base="behaviac::Agent" DisplayName="ArrayAccessTest_Agent" Desc="ArrayAccessTest Agent Desc">
+      <Member Name="c_Int" DisplayName="c_Int" Desc="TestNS::AgentArrayAccessTest::c_Int" Class="TestNS::AgentArrayAccessTest" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Member Name="c_ListInts" DisplayName="c_ListInts" Desc="TestNS::AgentArrayAccessTest::c_ListInts" Class="TestNS::AgentArrayAccessTest" Type="vector&lt;int&gt;" TypeFullName="System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" defaultvalue="5:10|20|30|40|50" Static="false" Public="true" Readonly="false" />
+      <Member Name="c_Count" DisplayName="c_Count" Desc="TestNS::AgentArrayAccessTest::c_Count" Class="TestNS::AgentArrayAccessTest" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Member Name="c_douleVec" DisplayName="c_douleVec" Desc="c_douleVec" Class="TestNS::AgentArrayAccessTest" Type="vector&lt;double&gt;" TypeFullName="System.Collections.Generic.List`1[[System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" defaultvalue="3:0.01|0.02|0.03" Static="false" Public="true" Readonly="false" />
+      <Member Name="c_doubleVal" DisplayName="c_doubleVal" Desc="c_doubleVal" Class="TestNS::AgentArrayAccessTest" Type="double" TypeFullName="System.Double" defaultvalue="0.05" Static="false" Public="true" Readonly="false" />
+      <Member Name="c_doubleVec2" DisplayName="c_doubleVec2" Desc="c_doubleVec2" Class="TestNS::AgentArrayAccessTest" Type="vector&lt;double&gt;" TypeFullName="System.Collections.Generic.List`1[[System.Double, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" defaultvalue="3:0.01|0.02|0.03" Static="false" Public="true" Readonly="false" />
+    </agent>
+  </agents>
+  <instances>
+    <instance name="ParTestRegNameAgent" class="ParTestRegNameAgent" DisplayName="ParTestRegNameAgent" Desc="ParTestRegNameAgent" />
+    <instance name="StaticAgent" class="StaticAgent" DisplayName="StaticAgent" Desc="StaticAgent" />
+  </instances>
+</meta>

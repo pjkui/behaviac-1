@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<agents version="1" signature="3984568600">
+  <agent type="Player" base="GameActor">
+    <properties>
+      <property name="Status" type="behaviac::EBTStatus" member="false" static="false" defaultvalue="BT_INVALID" />
+    </properties>
+  </agent>
+</agents>

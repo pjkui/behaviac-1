@@ -1,0 +1,4 @@
+The following packages are used as binary in the designer:
+
+KDiff3 :               Copyright (C) 2002-2011 Joachim Eibl
+                       License: GNU-General Public License Version 2 (see below)

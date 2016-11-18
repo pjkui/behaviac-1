@@ -1,0 +1,10 @@
+#include "behaviac/agent/registermacros.h"
+#include "StructExtended.h"
+
+BEHAVIAC_BEGIN_STRUCT(StructExtended)
+{
+	BEHAVIAC_REGISTER_STRUCT_PROPERTY(x);
+	BEHAVIAC_REGISTER_STRUCT_PROPERTY(y);
+	BEHAVIAC_REGISTER_STRUCT_PROPERTY(z);
+}
+BEHAVIAC_END_STRUCT()

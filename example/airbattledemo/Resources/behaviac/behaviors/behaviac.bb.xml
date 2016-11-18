@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<meta>
+  <types>
+    <enumtype Type="ETest" Namespace="" DisplayName="ETest" Desc="ETest">
+      <enum NativeValue="EA" Value="EA" DisplayName="EA" Desc="" MemberValue="-1" />
+      <enum NativeValue="EB" Value="EB" DisplayName="EB" Desc="" MemberValue="-1" />
+      <enum NativeValue="EC" Value="EC" DisplayName="EC" Desc="" MemberValue="-1" />
+    </enumtype>
+    <struct Type="StructTest" Namespace="" Base="" DisplayName="StructTest" Desc="StructTest">
+      <Member Name="a" DisplayName="a" Desc="a" Type="bool" TypeFullName="System.Boolean" Class="StructTest" Public="true" />
+    </struct>
+  </types>
+  <agents>
+    <agent classfullname="Enemy" base="behaviac::Agent" DisplayName="Enemy" Desc="Enemy" IsCustomized="true">
+      <Member Name="enemyType" DisplayName="enemyType" Desc="enemy's type" Class="Enemy" Type="int" TypeFullName="System.Int32" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Member Name="m_init_speed" DisplayName="m_init_speed" Desc="init enemy plane speed" Class="Enemy" Type="List&lt;float&gt;" TypeFullName="System.Collections.Generic.List`1[[System.Single, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" defaultvalue="4:50|50|100|150" Static="false" Public="true" Readonly="false" />
+      <Member Name="initSpeed" DisplayName="initSpeed" Desc="init enemy speed" Class="Enemy" Type="float" TypeFullName="System.Single" defaultvalue="0" Static="false" Public="true" Readonly="false" />
+      <Member Name="randomSpeed" DisplayName="randomSpeed" Desc="randomSpeed" Class="Enemy" Type="float" TypeFullName="System.Single" defaultvalue="50" Static="false" Public="true" Readonly="false" />
+    </agent>
+    <agent classfullname="NPC" base="behaviac::Agent" DisplayName="NPC" Desc="NPC" IsCustomized="true">
+      <Member Name="delayTime" DisplayName="delayTime" Desc="deley frame" Class="NPC" Type="List&lt;int&gt;" TypeFullName="System.Collections.Generic.List`1[[System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]" defaultvalue="5:20|15|10|5|2" Static="false" Public="true" Readonly="false" />
+    </agent>
+  </agents>
+  <instances />
+</meta>

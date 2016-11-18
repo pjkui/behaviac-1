@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<workspace name="ships" metafilename="ships.xml" folder="bt\behaviors" export="bt\exported" language="cpp">
+  <export>
+    <cs>
+      <isexported>False</isexported>
+      <exportfilecount>1</exportfilecount>
+      <folder>../../../example/spaceship/data/bt/exported</folder>
+    </cs>
+    <cpp>
+      <isexported>True</isexported>
+      <exportfilecount>1</exportfilecount>
+      <folder>../..</folder>
+      <includedfilenames>
+        <includedfilename>framework/GameObject.h</includedfilename>
+        <includedfilename>framework/Ship.h</includedfilename>
+        <includedfilename>framework/Projectile.h</includedfilename>
+      </includedfilenames>
+    </cpp>
+    <bson>
+      <isexported>True</isexported>
+    </bson>
+  </export>
+</workspace>

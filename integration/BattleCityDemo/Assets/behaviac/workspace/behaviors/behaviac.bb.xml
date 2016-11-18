@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<meta>
+  <types />
+  <agents>
+    <agent classfullname="Player" base="GameActor" DisplayName="Player" Desc="Player -&gt; GameActor">
+      <Member Name="Status" DisplayName="Status" Desc="Status" Class="Player" Type="behaviac::EBTStatus" TypeFullName="XMLPluginBehaviac.behaviac_EBTStatus" defaultvalue="BT_INVALID" Static="false" Public="true" Readonly="false" />
+    </agent>
+  </agents>
+  <instances>
+    <instance name="GameLevel" class="GameLevelCommon" DisplayName="GameLevel" Desc="GameLevel" />
+  </instances>
+</meta>

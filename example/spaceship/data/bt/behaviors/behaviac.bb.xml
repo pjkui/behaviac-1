@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<meta>
+  <types />
+  <agents />
+  <instances>
+    <instance name="framework::WorldState" class="framework::WorldState" DisplayName="framework::WorldState" Desc="framework::WorldState" />
+  </instances>
+</meta>

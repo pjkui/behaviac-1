@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<workspace name="tutorial_0" xmlmetafolder="." folder="behaviors" export="exported" language="cpp" version="3">
+  <export>
+    <cpp>
+      <isexported>True</isexported>
+      <exportfilecount>1</exportfilecount>
+      <folder>../../cpp</folder>
+    </cpp>
+  </export>
+</workspace>

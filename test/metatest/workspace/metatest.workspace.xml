@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<workspace name="metatest" metafilename="." folder="behaviors" export="exported" language="cpp" version="3">
+  <export>
+    <cpp>
+      <isexported>False</isexported>
+      <exportfilecount>1</exportfilecount>
+      <folder>../exported</folder>
+      <includedfilenames>
+        <includedfilename>../../StructExtended.h</includedfilename>
+      </includedfilenames>
+    </cpp>
+  </export>
+</workspace>

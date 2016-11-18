@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<meta>
+  <types />
+  <agents />
+  <instances>
+    <instance name="player1" class="CBTPlayer" DisplayName="player1" Desc="player1" />
+  </instances>
+</meta>

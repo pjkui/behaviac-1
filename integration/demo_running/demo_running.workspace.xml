@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<workspace name="bttest" xmlmetafolder="meta" folder="..\..\test\demo_running\behaviac\behaviors" export="exported" language="cs">
+  <xmlmeta>demo_running.xml</xmlmeta>
+  <export>
+    <cs>
+      <isexported>True</isexported>
+      <exportunifiedfile>True</exportunifiedfile>
+      <folder>../exported</folder>
+    </cs>
+    <bson>
+      <isexported>True</isexported>
+    </bson>
+  </export>
+</workspace>
